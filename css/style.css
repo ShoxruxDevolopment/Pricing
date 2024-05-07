@@ -1,0 +1,20 @@
+:root{
+  --bg-color:linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+  --text-color:#6D72DE;
+  --text-color-white:#FFFFFF;
+
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+body{
+  font-family: "Montserrat", sans-serif;
+}
+.wrapper{
+  width: 1440px;
+  height: 850px;
+}
