@@ -1,9 +1,14 @@
 :root{
   --bg-color:linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
-  --text-color:#6D72DE;
-  --text-color-white:#FFFFFF;
+  --text-color:#6E728E;
+  --btn-text-color:#6D72DE;
+  --btn-text-color-second:#FFFFFF;
 
 
+}
+.dark-mode{
+  --btn-text-color:#ffffff;
+  --btn-text-color-second:#6D72DE;
 }
 
 *{
@@ -17,4 +22,193 @@ body{
 .wrapper{
   width: 1440px;
   height: 850px;
+  margin: auto;
+  background-color: #F7F7FE;
+  /* background-image: url(../img/left-bg-img.png);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-image:url(../img/top-right-bg-img.png);
+  background-repeat:no-repeat;
+  background-position:right top;
+  background-size:30% */
+  /* border: 1px solid red; */
+}
+.container{
+  width: 100%;
+  max-width: 1050px;
+  height: 100%;
+  margin: auto;
+  padding-top: 71px;
+
+  /* border:1px solid blue; */
+}
+
+.heading-page{
+ font-size: 32px;
+ line-height: 39px;
+ color: var(--text-color) ;
+ font-weight: 700;
+ text-align: center;
+ margin-bottom: 40px;
+}
+.term{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 64px;
+
+}
+.btn-term{
+  display: flex;
+  align-items:center;
+  width: 56px;
+  height: 32px;
+  border-radius: 50px;
+  padding: 4px;
+  margin-right: 24px;
+  margin-left: 24px;
+  border:none;
+  background-color: #696EDD;
+
+}
+.oval-left{
+  width: 24px;
+  height: 24px;
+  background-color:#FFFFFF;
+  border-radius:50%;
+
+}
+.term-anual-month{
+ font-size: 15px;
+ line-height: 28px;
+ font-weight: 700;
+ color:var(--text-color) ;
+
+}
+.cards-wrapper{
+  display: flex;
+  width: 1050px;
+  height: 501px;
+  /* border: 1px solid green; */
+}
+.card-basic{
+  width: 350px;
+  height: 453px;
+  margin: 24px 0px 23px 0px;
+  background-color:var(--btn-text-color-second);
+  padding: 31px;
+  /* border:1px solid yellowgreen; */
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 0px 20px 40px 0px #D4D2F480;
+
+}
+.card-professional{
+  height: 500px;
+  margin: 0;
+  border-radius:5px;
+  background-color:var(--btn-text-color);
+  box-shadow: 0px 20px 40px 0px #D4D2F480;
+
+}
+
+.card-master{
+  border-radius:0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.heading-card{
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 24px;
+  color:var(--text-color);
+}
+.pricing{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.dollar-sign{
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing:-1.2px;
+  color:#4A4D60;
+  margin-right: 8px;
+}
+.pricing-number{
+ font-size: 72px;
+ line-height: 71px;
+ font-weight: 700;
+ margin: 0;
+ letter-spacing: -2.16px;
+ color:#4A4D60;
+}
+.horizontal-line{
+  width: 100%;
+  border:1px solid var(--text-color);
+  opacity: 25%;
+
+}
+.horizontal-line:not(:last-child){
+  margin-bottom: 12px;
+}
+.horizontal-line:not(:first-child){
+  margin-top: 12px;
+}
+.info-card{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 700;
+  color: var(--text-color);
+
+}
+.btn{
+  width: 100%;
+  height:44px;
+  background-color:var(--btn-text-color);
+  border:none;
+  border-radius:5px;
+  font-style: 13px;
+  line-height: 16px;
+  letter-spacing: 1.39px;
+  color:var(--btn-text-color-second);
+  margin-top: 32px;
+  cursor: pointer;
+}
+.btn-professional-card{
+  border:1px solid var(--btn-text-color-second);
+}
+
+
+/* HOVER */
+.card-professional:hover .heading-card-professional{
+  color:var(--btn-text-color-second);
+}
+.card-professional:hover .dollar-sign-professional-card{
+  color:var(--btn-text-color-second);
+}
+.card-professional:hover .pricing-number-professional-card{
+  color:var(--btn-text-color-second);
+}
+.card-professional:hover .info-card{
+  color:var(--btn-text-color-second);
+}
+.card-professional:hover .horizontal-line{
+  border-color:var(--btn-text-color-second);
+}
+.card-professional:hover .btn{
+  background-color: var(--btn-text-color);
+
+}
+.card-basic:hover .btn{
+  background-color:var(--btn-text-color-second);
+  color: var(--btn-text-color);
+  border:1px solid var(--btn-text-color);
 }
