@@ -19,6 +19,19 @@
 body{
   font-family: "Montserrat", sans-serif;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .wrapper{
   width: 1440px;
   height: 850px;
@@ -51,40 +64,84 @@ body{
  text-align: center;
  margin-bottom: 40px;
 }
-.term{
+.pricing-switch{
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 64px;
 
 }
-.btn-term{
+.switch{
   display: flex;
+  justify-content: center;
   align-items:center;
-  width: 56px;
-  height: 32px;
-  border-radius: 50px;
-  padding: 4px;
-  margin-right: 24px;
-  margin-left: 24px;
-  border:none;
-  background-color: #696EDD;
-
 }
-.oval-left{
-  width: 24px;
-  height: 24px;
-  background-color:#FFFFFF;
-  border-radius:50%;
 
-}
-.term-anual-month{
+
+.switch-label{
  font-size: 15px;
  line-height: 28px;
  font-weight: 700;
- color:var(--text-color) ;
+ color:rgba(110, 114,142, 0.5) ;
+ cursor: pointer;
 
 }
+.switch-label:hover{
+  color:var(--text-color);
+}
+.switch-control{
+  position: relative;
+  width: 56px;
+  height: 32px;
+  border-radius:16px;
+  padding: 4px;
+  margin-left: 24px;
+  margin-right: 24px;
+  background-color:#696EDD;
+  background-image: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+
+}
+.switch-circle{
+  width: 24px;
+  height: 24px;
+  border-radius:50%;
+  background-color:var(--btn-text-color-second);
+  transition: margin 0.2s ease;
+
+}
+.switch-control:hover .switch-circle{
+  /* margin-left: 24px; */
+}
+.switch-control-annual,
+.switch-control-monthly{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+
+}
+.switch-input-annual:checked ~.switch-control .switch-control-monthly,
+.switch-input-monthly:checked ~.switch-control .switch-control-annual{
+  z-index: 5;
+}
+.switch-input-monthly:checked ~ .switch-control .switch-circle{
+ margin-left: 24px;
+}
+/* .switch-control-annual{
+  right: 100%;
+}
+.switch-control-monthly{
+  left: 100%;
+} */
+/* .switch-input-annual:checked ~ .switch-control .switch-control-monthly{
+ transform: translateY(-10px);
+}
+.switch-input-monthly:checked ~ .switch-control .switch-control-annual{
+  transform: translateY(-10px);
+ } */
+
 .cards-wrapper{
   display: flex;
   width: 1050px;
