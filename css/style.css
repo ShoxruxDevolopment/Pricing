@@ -24,14 +24,13 @@ body{
   height: 850px;
   margin: auto;
   background-color: #F7F7FE;
-  /* background-image: url(../img/left-bg-img.png);
-  background-size: 30%;
+  background-image: url(../img/left-bg-img.png),
+  url(../img/top-right-bg-img.png);
   background-repeat: no-repeat;
-  background-position: left bottom;
-  background-image:url(../img/top-right-bg-img.png);
+  background-position: left  bottom,
+  right  top;
   background-repeat:no-repeat;
-  background-position:right top;
-  background-size:30% */
+
   /* border: 1px solid red; */
 }
 .container{
