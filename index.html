@@ -22,7 +22,7 @@
       <form class="pricing-switch" action="https://echo.htmlacademy.ru" method="get">
         <div class="switch">
           <input class="switch-input-annual visually-hidden" type="radio" name="payment-period" value="annual" id="annual-payment-radio">
-          <input class="switch-input-monthly visually-hidden" type="radio" name="payment-period" value="monthly"id="monthly-payment-radio">
+          <input class="switch-input-monthly visually-hidden" type="radio" name="payment-period" value="monthly"id="monthly-payment-radio" checked>
           <label class="switch-label" for="annual-payment-radio">Annually</label>
           <div class="switch-control">
             <div class="switch-circle"></div>
@@ -37,11 +37,11 @@
       </form>
 
       <div class="cards-wrapper">
-        <div class="card-basic">
+        <div class="pricing-number-basic card-basic " >
           <h5 class="heading-card">Basic</h5>
-          <div class="pricing">
+          <div class="pricing" data-payment-annual="199.99" data-payment-monthly="19.99">
             <span class="dollar-sign">$</span>
-            <h1 class="pricing-number">19.99</h1>
+            <span class="pricing-number">19.99</span>
           </div>
           <hr class="horizontal-line">
           <span class="info-card">500 GB Storage</span>
@@ -54,10 +54,10 @@
           <button class="btn">LEARN MORE</button>
         </div>
 
-        <div class="card-basic card-professional">
+        <div class="pricing-basic card-basic card-professional">
 
             <h5 class="heading-card heading-card-professional">Professional</h5>
-          <div class="pricing">
+          <div class="pricing" data-payment-annual="249.99" data-payment-monthly="24.99" >
             <span class="dollar-sign dollar-sign-professional-card">$</span>
             <h1 class="pricing-number pricing-number-professional-card">24.99</h1>
           </div>
@@ -73,9 +73,9 @@
           <button class="btn btn-professional-card">LEARN MORE</button>
         </div>
 
-        <div class="card-basic card-master">
+        <div class="pricing-basic card-basic card-master" >
           <h5 class="heading-card">Master</h5>
-          <div class="pricing">
+          <div class="pricing" data-payment-annual="399.99" data-payment-monthly="39.99">
             <span class="dollar-sign">$</span>
             <h1 class="pricing-number">39.99</h1>
           </div>
@@ -94,6 +94,7 @@
     </div>
 
   </div>
+  <script src="main.js"></script>
 
 </body>
 </html>
